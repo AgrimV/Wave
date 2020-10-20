@@ -1,0 +1,31 @@
+<WaveApp>:
+    canvas.before:
+        Color:
+            rgb: (1, 0.6, 0)
+        Rectangle:
+            size: root.size
+        Rectangle:
+            size: root.size
+            source: 'bg.png'
+    GridLayout:
+        rows: 3
+        size: root.size
+        padding: [root.width * 0.02, 0, root.width * 0.02, 0]
+        Label:
+            text: 'Hello I am [b][color=0006ff]Wave[/color].[/b]\n[color=00bbff]                   ~~~~[/color]\nWhat can I help you with?'
+            markup: True
+            font_size: 21
+        TextInput:
+            id: input
+            hint_text: 'Your query goes here~~~'
+            cursor_width: '2.5sp'
+            cursor_color: (0, 0, 1, 1)
+            size_hint_y: 0.18
+            multiline: False
+            font_size: 18
+            on_text_validate: root.OnEnter()
+        BoxLayout:
+            padding: [90, 50]
+            ImageButton:
+                # source: 'microphoneo.png'
+                size_hint: (.5, .5)
