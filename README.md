@@ -1,5 +1,8 @@
 # Wave
 
+> [!WARNING]
+> We have an AI at home, in the archive.
+
 An attempt to create a virtual PA in Python.
 
 It can open applications, open YouTube search result page, fetch results from the web using DuckDuckGo search engine (*Selenium*) and *Wikipedia API* and also perform some calculations using the *WolfRamAlpha API*.
